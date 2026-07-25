@@ -813,3 +813,152 @@
     overflow-wrap: break-word;
 }
 /*** Single Cloud TecHub — Text Overflow Fix End ***/
+
+/*** Single Cloud TecHub — Mobile Responsive Fixes Start ***/
+
+/* Floating WhatsApp button (all screens, most useful on mobile) */
+.sc-whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 58px;
+    height: 58px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .25);
+    z-index: 1000;
+    transition: transform .2s ease;
+}
+
+.sc-whatsapp-float i {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.sc-whatsapp-float:hover {
+    transform: scale(1.08);
+}
+
+/* Mobile quick-contact row inside the collapsed nav menu */
+.sc-mobile-contact {
+    display: none;
+}
+
+@media (max-width: 1199.98px) {
+    .sc-mobile-contact {
+        display: flex;
+        gap: .75rem;
+        padding: 1rem 0;
+        border-top: 1px solid #eee;
+        margin-top: .5rem;
+    }
+    .sc-mobile-contact a {
+        flex: 1;
+        text-align: center;
+        padding: .65rem;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: .85rem;
+        text-decoration: none;
+    }
+    .sc-mobile-contact .sc-mc-call {
+        background: #eef1fb;
+        color: #0C34A0;
+    }
+    .sc-mobile-contact .sc-mc-whatsapp {
+        background: #25D366;
+        color: #fff;
+    }
+}
+
+/* Navbar logo — shrink on small screens so it doesn't crowd the toggler */
+@media (max-width: 575.98px) {
+    .sc-logo-mark {
+        width: 34px;
+        height: 34px;
+    }
+    .sc-logo-text {
+        font-size: 1.1rem;
+    }
+    .sc-logo-tagline {
+        font-size: .55rem;
+        letter-spacing: 1px;
+    }
+}
+
+/* Hero section — reduce oversized desktop padding/type on mobile */
+.sc-hero-section {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+
+@media (max-width: 767.98px) {
+    .sc-hero-section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    .display-4 {
+        font-size: 2rem;
+    }
+    .display-3 {
+        font-size: 1.9rem;
+    }
+    .display-2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Badge pill — stop overflow / awkward wrap on narrow screens */
+@media (max-width: 575.98px) {
+    .badge.rounded-pill {
+        white-space: normal;
+        font-size: .68rem;
+        line-height: 1.6;
+    }
+}
+
+/* Founder card — tighter padding on mobile */
+@media (max-width: 575.98px) {
+    .sc-founder-card {
+        padding: 1.75rem !important;
+    }
+    .sc-founder-avatar {
+        width: 72px;
+        height: 72px;
+        font-size: 1.5rem;
+    }
+}
+
+/* Contact page map — force visible height on mobile instead of collapsing via h-100 */
+@media (max-width: 991.98px) {
+    .contact-map {
+        height: 300px;
+        padding: 0 !important;
+    }
+    .contact-map iframe {
+        min-height: 300px;
+    }
+}
+
+/* Services cards — icon size down a notch on very small screens */
+@media (max-width: 575.98px) {
+    .services-content-icon i.fa-5x {
+        font-size: 3rem !important;
+    }
+    .services-content-icon i.fa-7x {
+        font-size: 3.5rem !important;
+    }
+}
+
+/* CTA banner buttons — full width, easier to tap on mobile */
+@media (max-width: 575.98px) {
+    .btn.rounded-pill.px-5,
+    .btn.rounded-pill.px-4 {
+        width: 100%;
+    }
+}
+
+/*** Single Cloud TecHub — Mobile Responsive Fixes End ***/
