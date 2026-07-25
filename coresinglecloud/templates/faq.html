@@ -1,0 +1,164 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}FAQs - Single Cloud TecHub{% endblock %}
+
+{% block content %}
+
+<!-- Page Header Start -->
+<div class="container-fluid sc-page-header py-5">
+    <div class="container text-center py-5">
+        <h1 class="display-3 text-white mb-4 animated slideInDown">Frequently Asked Questions</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">FAQs</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+
+
+<!-- FAQ Content Start -->
+<div class="container py-5 my-3">
+    <div class="row justify-content-center">
+        <div class="col-lg-9">
+
+            <div class="accordion" id="faqAccordion">
+
+                <div class="accordion-item mb-3 border-0 shadow-sm rounded overflow-hidden">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            What kind of businesses do you build systems for?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We build for retail &amp; pharmacy (POS), schools (School Management Systems), churches
+                            (Church ERP), hospitals &amp; clinics (Hospital ERP), property owners (Property
+                            Management), and general businesses needing custom websites, web apps or mobile apps. If
+                            your organization has a workflow that needs digitizing, we can likely help.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mb-3 border-0 shadow-sm rounded overflow-hidden">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            How long does a typical project take?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            It depends on scope. A standard website usually takes 1–3 weeks. Custom systems like a
+                            POS, School ERP or Church ERP typically take 4–8 weeks depending on the number of
+                            modules and any special integrations (M-Pesa, SHA, payroll, etc.). We'll give you a
+                            realistic timeline after understanding your requirements.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mb-3 border-0 shadow-sm rounded overflow-hidden">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            Do you host the system after it's built, or do we need our own server?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We handle end-to-end hosting — deployment, SSL certificates, database setup and ongoing
+                            server maintenance — on our own infrastructure, so you don't need to manage servers
+                            yourself. If you'd prefer to host on your own infrastructure, we can support that too.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mb-3 border-0 shadow-sm rounded overflow-hidden">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            Do your systems support M-Pesa payments?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes. Our POS system and several client platforms integrate M-Pesa STK Push via
+                            Safaricom's Daraja API, so customers can pay directly at checkout without leaving the
+                            system.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mb-3 border-0 shadow-sm rounded overflow-hidden">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                            Who owns the system once it's built?
+                        </button>
+                    </h2>
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You do. Once a project is fully paid for, the custom software we build for you belongs
+                            to you, as set out in our <a href="{% url 'terms' %}" class="text-secondary">Terms of
+                            Use</a> and your project agreement.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mb-3 border-0 shadow-sm rounded overflow-hidden">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                            Do you offer support after launch?
+                        </button>
+                    </h2>
+                    <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes. We offer ongoing hosting, maintenance and technical support after launch, including
+                            bug fixes, feature updates and system monitoring, so your platform keeps running
+                            reliably.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mb-3 border-0 shadow-sm rounded overflow-hidden">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                            Do you also supply computers, printers and networking equipment?
+                        </button>
+                    </h2>
+                    <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes — alongside software, we supply computers, laptops, printers and networking
+                            equipment, and handle installation and setup, so you can get both the hardware and the
+                            software running your business from one place.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mb-3 border-0 shadow-sm rounded overflow-hidden">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                            How do I get a quote?
+                        </button>
+                    </h2>
+                    <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Reach out through our <a href="{% url 'contact' %}" class="text-secondary">Contact
+                            page</a> or WhatsApp us directly with a short description of what you need. We'll follow
+                            up within 24 hours to discuss scope and pricing.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-5">
+                <p class="mb-3">Still have a question?</p>
+                <a href="{% url 'contact' %}" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Ask Us Directly</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- FAQ Content End -->
+
+{% endblock %}

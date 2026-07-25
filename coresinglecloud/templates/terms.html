@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Terms of Use - Single Cloud TecHub{% endblock %}
+
+{% block content %}
+
+<!-- Page Header Start -->
+<div class="container-fluid sc-page-header py-5">
+    <div class="container text-center py-5">
+        <h1 class="display-3 text-white mb-4 animated slideInDown">Terms of Use</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Terms of Use</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+
+
+<!-- Terms Content Start -->
+<div class="container py-5 my-3">
+    <div class="row justify-content-center">
+        <div class="col-lg-9">
+            <p class="text-muted mb-5">Last updated: {% now "F Y" %}</p>
+
+            <h4 class="text-primary mb-3">1. Who We Are</h4>
+            <p class="mb-4">Single Cloud TecHub ("we", "us", "our") is an ICT solutions provider based in Serem,
+                Kenya, offering software development, hosting, hardware supply, networking and support services.
+                These Terms of Use govern your access to and use of this website and the services described on
+                it.</p>
+
+            <h4 class="text-primary mb-3">2. Use of This Website</h4>
+            <p class="mb-4">You may browse this website and use the contact form to make enquiries. You agree not
+                to misuse the site — including attempting to gain unauthorized access to any part of it, submitting
+                false information through our forms, or using the site in a way that could damage, disable or impair
+                its operation.</p>
+
+            <h4 class="text-primary mb-3">3. Our Services</h4>
+            <p class="mb-4">Descriptions of our software, hardware and support services on this site are provided
+                for general information. Specific project scope, pricing, timelines and deliverables are agreed
+                separately in writing (quotation, proposal or contract) with each client before work begins. Nothing
+                on this website constitutes a binding offer to provide services on stated terms.</p>
+
+            <h4 class="text-primary mb-3">4. Intellectual Property</h4>
+            <p class="mb-4">Unless otherwise agreed in writing, custom software, designs and systems we build for a
+                client become the property of that client upon full payment, as set out in the relevant project
+                agreement. The Single Cloud TecHub name, logo and website content remain our property and may not be
+                copied or reused without permission.</p>
+
+            <h4 class="text-primary mb-3">5. Third-Party Links &amp; Services</h4>
+            <p class="mb-4">Our systems may integrate with third-party services such as M-Pesa (Safaricom Daraja
+                API), Google Maps or hosting providers. We are not responsible for the availability or content of
+                third-party services, which are governed by their own terms.</p>
+
+            <h4 class="text-primary mb-3">6. Limitation of Liability</h4>
+            <p class="mb-4">While we take reasonable care to keep this website accurate and available, we make no
+                warranty that it will be error-free or uninterrupted. To the extent permitted by Kenyan law, Single
+                Cloud TecHub is not liable for any indirect or consequential loss arising from use of this
+                website.</p>
+
+            <h4 class="text-primary mb-3">7. Governing Law</h4>
+            <p class="mb-4">These terms are governed by the laws of the Republic of Kenya. Any disputes arising from
+                use of this website will be subject to the jurisdiction of the Kenyan courts.</p>
+
+            <h4 class="text-primary mb-3">8. Contact Us</h4>
+            <p class="mb-0">Questions about these terms can be sent to
+                <a href="mailto:muremipeter@singlecloud.co.ke" class="text-secondary">muremipeter@singlecloud.co.ke</a>
+                or <a href="tel:+254794069346" class="text-secondary">0794 069 346</a>.</p>
+        </div>
+    </div>
+</div>
+<!-- Terms Content End -->
+
+{% endblock %}

@@ -1,0 +1,320 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Hero Start -->
+<div class="container-fluid bg-dark py-5" style="padding-top: 6rem !important; padding-bottom: 6rem !important;">
+    <div class="container py-5">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-7 wow fadeIn" data-wow-delay=".1s">
+                <span class="badge bg-secondary text-white px-3 py-2 rounded-pill mb-3" style="letter-spacing:1px;">SOFTWARE &nbsp;•&nbsp; HARDWARE &nbsp;•&nbsp; NETWORKING &nbsp;•&nbsp; SUPPORT</span>
+                <h1 class="display-4 text-white mb-4">Your Complete <span class="text-secondary">ICT Solutions</span> Partner</h1>
+                <p class="text-white-50 fs-5 mb-4">Single Cloud TecHub builds and supports the software, systems and infrastructure Kenyan schools, churches, hospitals, retailers and businesses run on — from custom Django platforms to hardware supply and networking.</p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="#solutions" class="btn btn-secondary text-white px-4 py-3 rounded-pill">Our Solutions</a>
+                    <a href="{% url 'contact' %}" class="btn btn-outline-light px-4 py-3 rounded-pill">Get a Quote</a>
+                </div>
+            </div>
+            <div class="col-lg-5 wow fadeIn" data-wow-delay=".3s">
+                <svg viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg" class="img-fluid rounded shadow">
+                    <defs>
+                        <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#0C34A0"/>
+                            <stop offset="100%" stop-color="#071F63"/>
+                        </linearGradient>
+                        <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#F97103"/>
+                            <stop offset="100%" stop-color="#FA862A"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="0" y="0" width="600" height="500" rx="24" fill="url(#bgGrad)"/>
+                    <g fill="#ffffff" opacity="0.08">
+                        <circle cx="40" cy="40" r="3"/><circle cx="70" cy="40" r="3"/><circle cx="100" cy="40" r="3"/>
+                        <circle cx="40" cy="70" r="3"/><circle cx="70" cy="70" r="3"/><circle cx="100" cy="70" r="3"/>
+                        <circle cx="40" cy="100" r="3"/><circle cx="70" cy="100" r="3"/><circle cx="100" cy="100" r="3"/>
+                    </g>
+                    <g transform="translate(400,60)">
+                        <path d="M20 46c-15 0-27-12-27-27s12-27 27-27c3 0 5 .4 8 1.1C33 -6 44-14 58-14c18 0 33 14 34 32 10 2.7 18 12 18 23 0 13.3-10.7 24-24 24H20z" fill="url(#cloudGrad)" opacity="0.9"/>
+                    </g>
+                    <g transform="translate(120,150)">
+                        <rect x="0" y="0" width="300" height="190" rx="10" fill="#0A2A80" stroke="#1E4BC0" stroke-width="2"/>
+                        <rect x="14" y="14" width="272" height="150" rx="4" fill="#050F30"/>
+                        <g>
+                            <rect x="28" y="30" width="70" height="8" rx="2" fill="#F97103"/>
+                            <rect x="105" y="30" width="110" height="8" rx="2" fill="#4667BC"/>
+                            <rect x="28" y="50" width="40" height="8" rx="2" fill="#4667BC"/>
+                            <rect x="75" y="50" width="150" height="8" rx="2" fill="#8FA3D9"/>
+                            <rect x="44" y="70" width="90" height="8" rx="2" fill="#F97103"/>
+                            <rect x="140" y="70" width="60" height="8" rx="2" fill="#4667BC"/>
+                            <rect x="28" y="90" width="60" height="8" rx="2" fill="#8FA3D9"/>
+                            <rect x="95" y="90" width="130" height="8" rx="2" fill="#4667BC"/>
+                            <rect x="44" y="110" width="100" height="8" rx="2" fill="#F97103"/>
+                            <rect x="28" y="130" width="45" height="8" rx="2" fill="#4667BC"/>
+                            <rect x="80" y="130" width="80" height="8" rx="2" fill="#8FA3D9"/>
+                        </g>
+                        <path d="M-15 190 L315 190 L340 230 L-40 230 Z" fill="#0C34A0"/>
+                        <rect x="115" y="204" width="70" height="6" rx="3" fill="#071F63"/>
+                    </g>
+                    <g transform="translate(90,330)">
+                        <circle cx="0" cy="0" r="32" fill="url(#cloudGrad)"/>
+                        <path d="M-12 0 L-3 10 L14 -12" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <g transform="translate(460,300)">
+                        <rect x="-45" y="-24" width="90" height="48" rx="10" fill="#ffffff" opacity="0.95"/>
+                        <circle cx="-20" cy="0" r="10" fill="#F97103"/>
+                        <rect x="-2" y="-6" width="34" height="6" rx="3" fill="#0C34A0"/>
+                        <rect x="-2" y="4" width="24" height="6" rx="3" fill="#8FA3D9"/>
+                    </g>
+                    <g transform="translate(60,420)">
+                        <text x="0" y="0" font-family="'Space Grotesk', sans-serif" font-size="26" font-weight="700" fill="#ffffff">Code. Deploy. Support.</text>
+                        <text x="0" y="28" font-family="'Inter', sans-serif" font-size="14" fill="#B9C6EA">Custom software built and hosted end-to-end.</text>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero End -->
+
+
+<!-- Stats Start -->
+<div class="container-fluid bg-primary py-5">
+    <div class="container">
+        <div class="row g-4 text-center">
+            <div class="col-6 col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                <h1 class="text-secondary counter-value">10</h1>
+                <h6 class="text-white mt-1">Systems Delivered</h6>
+            </div>
+            <div class="col-6 col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                <h1 class="text-secondary counter-value">6</h1>
+                <h6 class="text-white mt-1">Sectors Served</h6>
+            </div>
+            <div class="col-6 col-lg-3 wow fadeIn" data-wow-delay=".5s">
+                <h1 class="text-secondary counter-value">100</h1>
+                <h6 class="text-white mt-1">% Kenyan-Built</h6>
+            </div>
+            <div class="col-6 col-lg-3 wow fadeIn" data-wow-delay=".7s">
+                <h1 class="text-secondary counter-value">24/7</h1>
+                <h6 class="text-white mt-1">Hosting & Support</h6>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Stats End -->
+
+
+<!-- Solutions Start -->
+<div class="container-fluid services py-5 mb-3" id="solutions">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Our Solutions</h5>
+            <h1>Built For How Your Organization Actually Runs</h1>
+        </div>
+        <div class="row g-4 services-inner">
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <i class="fa fa-graduation-cap fa-4x mb-3 text-primary"></i>
+                        <h5 class="mb-2">School Management Systems</h5>
+                        <p class="mb-0 small">CBC-ready, fees, report cards, admin.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay=".2s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <i class="fa fa-place-of-worship fa-4x mb-3 text-primary"></i>
+                        <h5 class="mb-2">Church Sadaka System</h5>
+                        <p class="mb-0 small">Giving, finance and multi-tier admin.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <i class="fa fa-home fa-4x mb-3 text-primary"></i>
+                        <h5 class="mb-2">Property Management</h5>
+                        <p class="mb-0 small">Tenants, billing, flexible charges.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay=".4s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <i class="fa fa-hospital fa-4x mb-3 text-primary"></i>
+                        <h5 class="mb-2">Hospital System</h5>
+                        <p class="mb-0 small">Billing, SHA integration, pharmacy &amp; payroll.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <i class="fa fa-globe fa-4x mb-3 text-primary"></i>
+                        <h5 class="mb-2">Websites &amp; Web Apps</h5>
+                        <p class="mb-0 small">Custom Django platforms, e-commerce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay=".2s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <i class="fa fa-mobile-alt fa-4x mb-3 text-primary"></i>
+                        <h5 class="mb-2">Mobile App Development</h5>
+                        <p class="mb-0 small">PWA & offline-first apps.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <i class="fa fa-cloud fa-4x mb-3 text-primary"></i>
+                        <h5 class="mb-2">Cloud Hosting &amp; Email</h5>
+                        <p class="mb-0 small">VPS deployment, SSL, uptime.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay=".4s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <i class="fa fa-network-wired fa-4x mb-3 text-primary"></i>
+                        <h5 class="mb-2">Hardware &amp; Networking</h5>
+                        <p class="mb-0 small">Computers, printers, LAN setup.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="{% url 'service' %}" class="btn btn-secondary text-white px-5 py-3 rounded-pill">View All Services</a>
+        </div>
+    </div>
+</div>
+<!-- Solutions End -->
+
+
+<!-- Featured Projects Start -->
+<div class="container-fluid py-5 mb-3">
+    <div class="container py-3">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Our Work</h5>
+            <h1>Live Systems We've Built &amp; Deployed</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".1s">
+                <div class="position-relative rounded overflow-hidden">
+                    <img src="{% static 'img/project-1.jpg' %}" class="img-fluid w-100" alt="SingleClouds POS">
+                    <div class="p-4 bg-light">
+                        <span class="text-secondary small">POS / Retail</span>
+                        <h5 class="mt-1 mb-2">SingleClouds POS</h5>
+                        <p class="small mb-2">M-Pesa STK push, multi-tenant, offline-ready POS for Kenyan retail &amp; pharmacy.</p>
+                        <a href="https://pos.singlecloud.co.ke" target="_blank" class="text-secondary fw-bold">Visit Site <i class="fa fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".2s">
+                <div class="position-relative rounded overflow-hidden">
+                    <img src="{% static 'img/project-2.jpg' %}" class="img-fluid w-100" alt="ChurchERP">
+                    <div class="p-4 bg-light">
+                        <span class="text-secondary small">Church ERP</span>
+                        <h5 class="mt-1 mb-2">ChurchERP</h5>
+                        <p class="small mb-2">5-tier multi-tenant SaaS: finance, giving, events &amp; ministries.</p>
+                        <a href="https://churcherp.singlecloud.co.ke" target="_blank" class="text-secondary fw-bold">Visit Site <i class="fa fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                <div class="position-relative rounded overflow-hidden">
+                    <img src="{% static 'img/project-3.jpg' %}" class="img-fluid w-100" alt="Hospital ERP">
+                    <div class="p-4 bg-light">
+                        <span class="text-secondary small">Healthcare ERP</span>
+                        <h5 class="mt-1 mb-2">Hospital ERP</h5>
+                        <p class="small mb-2">Automated billing, SHA integration and full pharmacy management for hospitals.</p>
+                        <a href="https://hospitalerp.singlecloud.co.ke" target="_blank" class="text-secondary fw-bold">Visit Site <i class="fa fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="{% url 'contact' %}" class="btn btn-outline-primary px-5 py-3 rounded-pill">Discuss Your Project</a>
+        </div>
+    </div>
+</div>
+<!-- Featured Projects End -->
+
+
+<!-- Vision & Mission Start -->
+<div class="container-fluid bg-light py-5 mb-3">
+    <div class="container py-3">
+        <div class="row g-4">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay=".1s">
+                <div class="bg-white p-5 rounded h-100 shadow-sm">
+                    <i class="fa fa-eye fa-3x text-secondary mb-3"></i>
+                    <h3 class="text-primary mb-3">Our Vision</h3>
+                    <p class="mb-0">To be the leading digital (software) solutions provider in Kenya and beyond.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s">
+                <div class="bg-white p-5 rounded h-100 shadow-sm">
+                    <i class="fa fa-bullseye fa-3x text-secondary mb-3"></i>
+                    <h3 class="text-primary mb-3">Our Mission</h3>
+                    <p class="mb-0">To deliver innovative, reliable and affordable digital solutions that empower businesses, institutions and communities to improve efficiency, productivity and growth.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Vision & Mission End -->
+
+
+<!-- Why Choose Us Start -->
+<div class="container-fluid py-5 mb-3">
+    <div class="container py-3">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Why Single Cloud TecHub</h5>
+            <h1>We Supply. We Develop. We Support. We Grow With You.</h1>
+        </div>
+        <div class="row g-4 text-center">
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                <i class="fa fa-lightbulb fa-3x text-secondary mb-3"></i>
+                <h5>Local Expertise</h5>
+                <p class="small">Built in Nairobi, for Kenyan retail, church, school &amp; healthcare workflows.</p>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay=".2s">
+                <i class="fa fa-puzzle-piece fa-3x text-secondary mb-3"></i>
+                <h5>End-to-End</h5>
+                <p class="small">From custom software to hardware supply and network setup.</p>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                <i class="fa fa-rocket fa-3x text-secondary mb-3"></i>
+                <h5>Built to Scale</h5>
+                <p class="small">Multi-tenant architecture that grows from one branch to many.</p>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay=".4s">
+                <i class="fa fa-chart-line fa-3x text-secondary mb-3"></i>
+                <h5>Ongoing Support</h5>
+                <p class="small">Hosting, maintenance and support long after launch.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Why Choose Us End -->
+
+
+<!-- CTA Banner Start -->
+<div class="container-fluid bg-primary py-5">
+    <div class="container py-4">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-8 text-center text-lg-start">
+                <h6 class="text-secondary">Let's Build The Future Together</h6>
+                <h2 class="text-white mb-0">Ready to digitize your business, school or church?</h2>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <a href="{% url 'contact' %}" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Get a Free Quote</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- CTA Banner End -->
+
+{% endblock %}

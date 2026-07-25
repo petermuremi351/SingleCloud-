@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Us - Single Cloud TecHub{% endblock %}
+
+{% block content %}
+
+
+<!-- Page Header Start -->
+<div class="container-fluid sc-page-header py-5">
+    <div class="container text-center py-5">
+        <h1 class="display-3 text-white mb-4 animated slideInDown">About Single Cloud TecHub</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+
+
+<!-- Our Story Start -->
+<div class="container-fluid py-5 my-3">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-7 col-md-6 wow fadeIn" data-wow-delay=".1s">
+                <h5 class="text-primary">Our Story</h5>
+                <h1 class="mb-4">Your Complete ICT Solutions Partner</h1>
+                <p>Single Cloud TecHub started with a simple idea: Kenyan schools, churches, hospitals, property
+                    owners and retailers deserve software built for how they actually operate — not generic tools
+                    forced to fit. We design, build, deploy and host complete systems, from the first line of code to
+                    the server it runs on.</p>
+                <p class="mb-4">Today that means everything from M-Pesa-enabled POS systems and multi-tenant Church
+                    ERPs to CBC-ready school management platforms, hospital billing systems, and the hardware,
+                    networking and support that keep it all running. Every system is built, deployed and supported
+                    end to end, right here in Kenya.</p>
+                <a href="{% url 'contact' %}" class="btn btn-secondary rounded-pill px-5 py-3 text-white">Work With Us</a>
+            </div>
+            <div class="col-lg-5 col-md-6 wow fadeIn" data-wow-delay=".3s">
+                <div class="sc-founder-card p-4 p-md-5">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="sc-founder-avatar me-3">PM</div>
+                        <div>
+                            <h4 class="mb-1">Peter Muremi</h4>
+                            <span class="text-secondary fw-bold">Chief Engineer &amp; Director of Operations</span>
+                        </div>
+                    </div>
+                    <p class="mb-4">"Every system we ship carries our name on it — that's why we build things we'd
+                        trust our own business to run on."</p>
+                    <div class="d-flex flex-column">
+                        <a href="tel:+254794069346" class="mb-2 text-dark text-decoration-none"><i class="fa fa-phone-alt text-secondary me-2"></i>0794 069 346</a>
+                        <a href="mailto:muremipeter@singlecloud.co.ke" class="text-dark text-decoration-none"><i class="fa fa-envelope text-secondary me-2"></i>muremipeter@singlecloud.co.ke</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Our Story End -->
+
+
+<!-- Values Start -->
+<div class="container-fluid bg-light py-5">
+    <div class="container py-3">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">What Drives Us</h5>
+            <h1>Innovate. Solve. Empower. Grow.</h1>
+        </div>
+        <div class="row g-4 text-center">
+            <div class="col-6 col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                <div class="sc-value-icon"><i class="fa fa-lightbulb"></i></div>
+                <h5>Innovate</h5>
+                <p class="small mb-0">New tools for old problems.</p>
+            </div>
+            <div class="col-6 col-lg-3 wow fadeIn" data-wow-delay=".2s">
+                <div class="sc-value-icon"><i class="fa fa-puzzle-piece"></i></div>
+                <h5>Solve</h5>
+                <p class="small mb-0">Real workflows, real fixes.</p>
+            </div>
+            <div class="col-6 col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                <div class="sc-value-icon"><i class="fa fa-hand-holding-heart"></i></div>
+                <h5>Empower</h5>
+                <p class="small mb-0">Tools that give you control.</p>
+            </div>
+            <div class="col-6 col-lg-3 wow fadeIn" data-wow-delay=".4s">
+                <div class="sc-value-icon"><i class="fa fa-chart-line"></i></div>
+                <h5>Grow</h5>
+                <p class="small mb-0">Built to scale with you.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Values End -->
+
+
+<!-- Stats Start -->
+<div class="container-fluid bg-primary py-5">
+    <div class="container">
+        <div class="row g-4 text-center">
+            <div class="col-6 col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                <h1 class="text-secondary counter-value">10</h1>
+                <h6 class="text-white mt-1">Systems Delivered</h6>
+            </div>
+            <div class="col-6 col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                <h1 class="text-secondary counter-value">6</h1>
+                <h6 class="text-white mt-1">Sectors Served</h6>
+            </div>
+            <div class="col-6 col-lg-3 wow fadeIn" data-wow-delay=".5s">
+                <h1 class="text-secondary counter-value">100</h1>
+                <h6 class="text-white mt-1">% Kenyan-Built</h6>
+            </div>
+            <div class="col-6 col-lg-3 wow fadeIn" data-wow-delay=".7s">
+                <h1 class="text-secondary counter-value">24/7</h1>
+                <h6 class="text-white mt-1">Hosting &amp; Support</h6>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Stats End -->
+
+
+<!-- CTA Banner Start -->
+<div class="container-fluid py-5">
+    <div class="container py-4">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-8 text-center text-lg-start">
+                <h6 class="text-secondary">Let's Build The Future Together</h6>
+                <h2 class="mb-0">Have a project in mind?</h2>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <a href="{% url 'contact' %}" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Get a Free Quote</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- CTA Banner End -->
+
+{% endblock %}

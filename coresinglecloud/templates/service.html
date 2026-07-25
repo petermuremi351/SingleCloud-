@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Our Services - Single Cloud TecHub{% endblock %}
+
+{% block content %}
+
+
+<!-- Page Header Start -->
+<div class="container-fluid sc-page-header py-5">
+    <div class="container text-center py-5">
+        <h1 class="display-3 text-white mb-4 animated slideInDown">Our Services</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Services</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+
+
+<!-- Intro Start -->
+<div class="container py-5">
+    <div class="text-center mx-auto wow fadeIn" data-wow-delay=".1s" style="max-width: 700px;">
+        <span class="badge bg-secondary text-white px-3 py-2 rounded-pill mb-3" style="letter-spacing:1px;">SOFTWARE &nbsp;•&nbsp; HARDWARE &nbsp;•&nbsp; NETWORKING &nbsp;•&nbsp; SUPPORT</span>
+        <h1 class="mb-3">Everything Your Organization Needs to Run Digitally</h1>
+        <p class="mb-0">From the software that runs your business to the hardware and network it runs on — we
+            supply, build, deploy and support all of it.</p>
+    </div>
+</div>
+<!-- Intro End -->
+
+
+<!-- Software Solutions Start -->
+<div class="container-fluid services py-5 mb-3">
+    <div class="container py-3">
+        <h5 class="text-primary mb-1">Software Solutions</h5>
+        <h2 class="mb-5">Custom-Built Systems</h2>
+        <div class="row g-4 services-inner">
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".1s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon">
+                            <i class="fa fa-graduation-cap fa-5x mb-4 text-primary"></i>
+                            <h4 class="mb-3">School Management Systems</h4>
+                            <p class="mb-4">CBC-ready platforms with rubric-based assessments (EE/ME/AE/BE), fee
+                                management and report cards for primary &amp; secondary schools.</p>
+                            <a href="{% url 'contact' %}" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Enquire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".2s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon">
+                            <i class="fa fa-place-of-worship fa-5x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Church Sadaka System</h4>
+                            <p class="mb-4">Multi-tier giving and finance platform covering denomination, region,
+                                district and church-level administration.</p>
+                            <a href="{% url 'contact' %}" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Enquire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon">
+                            <i class="fa fa-home fa-5x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Property Management System</h4>
+                            <p class="mb-4">Tenant records, flexible billing and rent tracking built for landlords
+                                and property managers.</p>
+                            <a href="{% url 'contact' %}" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Enquire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".1s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon">
+                            <i class="fa fa-hospital fa-5x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Hospital System</h4>
+                            <p class="mb-4">Automated billing, SHA integration, full pharmacy management and
+                                Kenya-statutory payroll for hospitals and clinics.</p>
+                            <a href="{% url 'contact' %}" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Enquire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".2s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon">
+                            <i class="fa fa-globe fa-5x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Websites &amp; Web Applications</h4>
+                            <p class="mb-4">Custom Django platforms, business websites and e-commerce with M-Pesa
+                                checkout, built and hosted end-to-end.</p>
+                            <a href="{% url 'contact' %}" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Enquire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon">
+                            <i class="fa fa-mobile-alt fa-5x mb-4 text-primary"></i>
+                            <h4 class="mb-3">Mobile App Development</h4>
+                            <p class="mb-4">Offline-first progressive web apps that keep working even with patchy
+                                connectivity.</p>
+                            <a href="{% url 'contact' %}" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Enquire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Software Solutions End -->
+
+
+<!-- Hardware & Support Start -->
+<div class="container-fluid bg-light py-5 mb-3">
+    <div class="container py-3">
+        <h5 class="text-primary mb-1">Hardware, Networking &amp; Support</h5>
+        <h2 class="mb-5">Infrastructure That Keeps It All Running</h2>
+        <div class="row g-4 services-inner">
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                <div class="services-item bg-white">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon">
+                            <i class="fa fa-cloud fa-4x mb-3 text-primary"></i>
+                            <h5 class="mb-2">Cloud Hosting &amp; Email</h5>
+                            <p class="mb-0 small">VPS deployment, SSL, mail and uptime management.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay=".2s">
+                <div class="services-item bg-white">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon">
+                            <i class="fa fa-desktop fa-4x mb-3 text-primary"></i>
+                            <h5 class="mb-2">Computer &amp; Laptop Supply</h5>
+                            <p class="mb-0 small">Procurement and setup for offices, schools and shops.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                <div class="services-item bg-white">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon">
+                            <i class="fa fa-print fa-4x mb-3 text-primary"></i>
+                            <h5 class="mb-2">Printers &amp; Networking</h5>
+                            <p class="mb-0 small">Printers, routers and electronic accessories, installed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay=".4s">
+                <div class="services-item bg-white">
+                    <div class="p-4 text-center services-content">
+                        <div class="services-content-icon">
+                            <i class="fa fa-headset fa-4x mb-3 text-primary"></i>
+                            <h5 class="mb-2">ICT Consultancy &amp; Support</h5>
+                            <p class="mb-0 small">Installation, consultancy and ongoing technical support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hardware & Support End -->
+
+
+<!-- CTA Banner Start -->
+<div class="container-fluid bg-primary py-5">
+    <div class="container py-4">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-8 text-center text-lg-start">
+                <h6 class="text-secondary">Not Sure Where to Start?</h6>
+                <h2 class="text-white mb-0">Tell us what you're running — we'll recommend the right solution.</h2>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <a href="{% url 'contact' %}" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Get a Free Quote</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- CTA Banner End -->
+
+{% endblock %}
