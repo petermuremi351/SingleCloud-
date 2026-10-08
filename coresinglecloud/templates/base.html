@@ -6,8 +6,16 @@
     <meta charset="utf-8">
     <title>{% block title %}Single Cloud TecHub - Your Complete ICT Solutions Partner{% endblock %}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="ICT solutions, software development, school management systems, church ERP, POS systems, Kenya" name="keywords">
-    <meta content="Single Cloud TecHub builds and supports software, hardware, networking and ICT solutions for schools, churches, retailers and businesses across Kenya." name="description">
+    <meta content="{% block meta_keywords %}ICT solutions Kenya, software development Kenya, school management system, church ERP, POS system Kenya, hospital ERP{% endblock %}" name="keywords">
+    <meta content="{% block meta_description %}Single Cloud TecHub builds and supports software, hardware, networking and ICT solutions for schools, churches, retailers and businesses across Kenya.{% endblock %}" name="description">
+    <link rel="canonical" href="https://{{ request.get_host }}{{ request.path }}">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Single Cloud TecHub">
+    <meta property="og:title" content="{% block og_title %}Single Cloud TecHub - Your Complete ICT Solutions Partner{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}Software, hardware, networking and ICT solutions for schools, churches, retailers and businesses across Kenya.{% endblock %}">
+    <meta property="og:url" content="https://{{ request.get_host }}{{ request.path }}">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +38,42 @@
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
 
     {% block extra_css %}{% endblock %}
+
+    <!-- Structured Data: LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Single Cloud TecHub",
+        "description": "ICT solutions provider offering software development, hardware supply, networking and support for schools, churches, hospitals, retailers and businesses across Kenya.",
+        "url": "https://{{ request.get_host }}/",
+        "telephone": "+254727081072",
+        "email": "support@singlecloud.co.ke",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Kakamega",
+            "addressCountry": "KE"
+        },
+        "areaServed": "KE",
+        "sameAs": [
+            "https://facebook.com/singleclouds",
+            "https://twitter.com/singleclouds",
+            "https://instagram.com/singleclouds",
+            "https://linkedin.com/company/singleclouds"
+        ],
+        "makesOffer": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "School Management Systems"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Church Sadaka System"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Property Management System"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hospital ERP System"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "POS Systems"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Websites & Web Applications"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mobile App Development"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cloud Hosting & Email"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hardware & Networking Supply"}}
+        ]
+    }
+    </script>
 </head>
 
 <body>
